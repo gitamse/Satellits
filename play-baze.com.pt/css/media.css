@@ -1,0 +1,206 @@
+@media (max-width: 1320px) {
+    .footer__wrapper {
+        padding: 20px;
+    }
+}
+@media (max-width: 1000px) {
+    .header {
+        height: 80px;
+    }
+    .header__logo img {
+        max-width: 80px;
+}
+    .header__menu {
+    margin-left: 60px;
+    }
+
+    .prime {
+        min-height: 440px;
+    }
+    .prime__background img {
+        -o-object-position: 60% 50%;
+           object-position: 60% 50%;
+    }
+
+    .main {
+    margin-top: 80px;
+    }
+
+    .features__list {
+        gap: 12px;
+    }
+
+    .promo__background img {
+        -o-object-position: 5% 50%;
+           object-position: 5% 50%;
+    }
+    .promo__background.right img  {
+        -o-object-position: 95% 50%;
+           object-position: 95% 50%;
+    }
+}
+@media (max-width: 900px) {
+    .header__button-menu {
+        display: block;
+        margin-left: 16px;
+    }
+    .header__menu {
+        display: block;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #0C1116;
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        margin: 0;
+        transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+    }
+    .header__menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    .header__menu.open {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        pointer-events: all;
+        opacity: 1;
+        overflow-y: auto;
+    }
+    .header__actions {
+        gap: 10px;
+    }
+
+    .slots__list {
+       gap: 12px;
+    }
+
+    .footer__menu > ul {
+        gap: 20px;
+    }
+    .footer__menu li:not(:last-child)::after {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .content {
+        padding: 16px;
+    }
+
+    .prime {
+        padding: 30px;
+    }
+
+    .features__list {
+        flex-wrap: wrap;
+    }
+    .features__item {
+        width: 170px;
+        flex: auto;
+    }
+
+    .promo {
+        min-height: 290px;
+    }
+
+    .scroll {
+        right: 20px;
+    }
+
+    .footer__menu li:not(:last-child)::after {
+        display: none;
+    }
+
+}
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 0 12px;
+    }
+    .header__actions a {
+        display: none;
+    }
+    .header__menu > .button {
+        display: block;
+        text-align: center;
+        font-weight: 900;
+        margin: 0 auto;
+    }
+    .header__menu > .header__button-signup {
+        margin-top: 10px;
+        color: #101D2C;
+    }
+    .app__buttons {
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 550px) {
+    .footer__menu > ul {
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    h1, .title.general {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    h2, title.high {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .prime__wrapper {
+        width: 100%;
+    }
+    .slots__list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .slots__item {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+@media (max-width: 400px) {
+    .content {
+        padding: 10px;
+    }
+
+    .prime {
+        padding: 12px;
+    }
+    .prime__rating span {
+        font-size: 20px;
+        margin-left: 8px;
+    }
+    .breadcrumbs a {
+        font-size: 12px;
+    }
+    .breadcrumbs li a:last-child::before {
+        margin: 0 6px;
+    }
+
+    .faq-item__question  {
+        padding: 10px;
+    }
+    .faq-item__answer p {
+        padding: 10px;
+    }
+
+    .footer__payments li {
+        width: 120px;
+    }
+    .footer__bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+}   

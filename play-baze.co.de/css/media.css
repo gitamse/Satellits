@@ -1,0 +1,215 @@
+@media (max-width: 1100px) {
+    .menu > ul {
+        gap: 20px;
+    }
+    .menu li:not(:last-child)::after {
+        content: "|";
+        margin-left: 20px;
+    }
+    .scroll {
+        right: 20px;
+        bottom: 70px;
+    }
+}
+@media (max-width: 1000px) {
+    .header__content {
+            padding: 0 20px;
+    }
+    .article__image img:last-child {
+        width: 50%
+    }
+    .app__button {
+        border: 1px solid #fff;
+    }
+    .slots__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 900px) {
+    body {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    h1, .title.general, .title.high.promo__title {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    h2, title.high {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .header__button-menu {
+        display: block;
+        margin-left: 16px;
+    }
+    .header__actions {
+        margin-left: auto;
+    }
+    .header__menu {
+        display: block;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #162029;
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .header__menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    .menu.header__menu li:not(:last-child)::after {
+        content: "";
+        display: none;
+}
+    .header__menu.open {
+        transform: translateY(0);
+        pointer-events: all;
+        opacity: 1;
+        overflow-y: auto;
+    }
+    .content {
+        padding: 24px;
+    }
+    .prime {
+        padding-left: 40px;
+    }
+    .prime__wrapper, .promo__wrapper {
+        border-radius: 16px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        backdrop-filter: blur(2px);
+    }
+    .wrapper {
+        padding: 0 10px;
+    }
+    .bonus__list {
+        gap: 8px;
+    }
+    .bonus__item {
+        padding: 10px;
+    }
+    .bonus-item__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .navigation__button {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+@media (max-width: 750px) {
+    .bonus__list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .bonus__item {
+        flex: 1 1 calc(50% - 8px);
+        width: calc(50% - 4px)
+    }
+}
+@media (max-width: 620px) {
+    .content {
+        padding: 16px;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .menu.footer__menu ul {
+        gap: 10px;
+    }
+    .menu li:not(:last-child)::after {
+        margin-left: 10px;
+    }
+
+}
+@media (max-width: 550px) {
+    .header__actions a {
+        display: none;
+    }
+    .header__menu > .button {
+        display: block;
+        text-align: center;
+        max-width: 130px;
+        font-weight: 900;
+        margin: 0 auto;
+    }
+    .header__menu > .header__button-signup {
+        margin-top: 10px;
+        color: #101D2C;
+    }
+    .content {
+        padding: 16px;
+    }
+    .prime {
+        padding: 0 20px;
+    }
+    .prime__wrapper, .promo__wrapper {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .menu.footer__menu ul {
+        flex-direction: column;
+    }
+    .menu li:not(:last-child)::after  {
+        display: none;
+    }
+    .faq-item__question, .faq-item__answer {
+        padding: 0 16px;
+    }
+    .footer {
+        padding-top: 0;
+    }
+}
+@media (max-width: 440px) {
+    h3 {
+        font-weight: 700;
+    }
+    .prime__wrapper, .promo__wrapper {
+        padding: 10px;
+    }
+    .app__buttons {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .slots__list {
+        gap: 10px;
+    }
+    .slots__item {
+        flex: 1 1 calc(50% - 8px);
+        width: calc(50% - 4px)
+    }
+    .navigation__button {
+        padding: 12px 16px;
+    }
+    .faq-item__question {
+        padding-right: 10px;
+    }
+    .footer__payments {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 380px) {
+    .bonus__item {
+        flex: 1 1 100%;
+    }
+}

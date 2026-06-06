@@ -1,0 +1,205 @@
+@media (max-width: 1320px) {
+    .prime__content {
+        min-width: 100%;
+    }
+
+    .footer__wrapper {
+        padding: 20px;
+    }
+}
+@media (max-width: 1100px) {
+    .slots__list {
+        flex-wrap: wrap;
+    }
+    .slots__item {
+        flex: 1 1 calc((100% - 22px *  2) / 3);
+    }
+}
+@media (max-width: 1000px) {
+    .header__menu {
+        margin-left: 60px;
+    }
+
+    .prime__background img {
+        -o-object-position: 60% 50%;
+           object-position: 60% 50%;
+    }
+
+    .promo__background img {
+        -o-object-position: 80%;
+           object-position: 80%;
+    }
+}
+@media (max-width: 900px) {
+    .header__button-menu {
+        display: block;
+        margin-left: 16px;
+    }
+    .header__menu {
+        display: block;
+        position: fixed;
+        top: 76px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: radial-gradient(82.67% 93.72% at 49.87% 100%, #2A2C33 0%, #0B0B0C 100%);
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        margin: 0;
+        transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+    }
+    .header__menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    .header__menu.open {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        pointer-events: all;
+        opacity: 1;
+        overflow-y: auto;
+    }
+
+    .footer__menu > ul {
+        gap: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .content {
+        padding: 16px;
+    }
+
+    .prime__wrapper, .promo__wrapper   {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+    }
+
+    .features__table tr {
+        flex: 100%;
+    }
+
+    .scroll {
+        right: 20px;
+    }
+
+    .footer__menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__menu li:not(:last-child)::after {
+        content: "";
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .bonus__list {
+        flex-wrap: wrap;
+    }
+    .bonus__item {
+        flex: 100%;
+    }
+}
+@media (max-width: 600px) {
+    h2, .title.high {
+        font-size: 20px;
+    }
+    .wrapper {
+        padding: 0 12px;
+    }
+    .header__actions a {
+        display: none;
+    }
+    .header__menu > .button {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .header__menu > .header__button-signup {
+        margin-top: 10px;
+    }
+
+    .breadcrumbs a {
+        font-size: 14px;
+    }
+    .breadcrumbs li a:first-child::after  {
+        margin: 0 10px;
+    }
+
+    .promo__wrapper {
+        padding: 10px;
+    }
+
+    .navigation__button {
+        font-size: 14px;
+    }
+
+    .slots__list {
+        gap: 10px;
+    }
+    .slots__item {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .app__actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+@media (max-width: 500px) {
+    h1, .title.general {
+        font-size: 34px;
+    }
+    .prime__wrapper {
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .button.large {
+        min-width: 0;
+        max-width: 200px;
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .prime {
+        padding: 12px;
+    }
+    .prime__content {
+        padding: 0;
+    }
+    .prime__wrapper {
+        padding: 10px;
+    }
+    .prime__rating span {
+        margin-left: 8px;
+    }
+
+    .features__table tr {
+        flex-direction: column;
+    }
+    .features__table th {
+        max-width: 100%;
+    }
+    .features__table td {
+        padding-top: 0;
+    }
+
+    .navigation__button{
+        padding: 12px 10px;
+    }
+}   
